@@ -1,6 +1,7 @@
 import { Switch, Route } from "wouter";
 import Home from "../src/pages/home";
 import About from "../src/pages/about";
+import Services from "../src/pages/services";
 import { Navigation } from "../src/components/layout/navigation";
 import { Footer } from "../src/components/layout/footer";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -17,6 +18,7 @@ function Router() {
     <Switch>
         <Route path="/" component={Home} />
         <Route path="/about" component={About} />
+        <Route path="/services" component={Services} />
     </Switch>
   )
 }
